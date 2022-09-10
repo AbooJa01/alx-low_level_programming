@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <time.h>
 /**
  * main -Entry point
  * Owner: AbooJa01
  * Details: c program to print -ve, zero and -ve results of a random number
- * Return 0
+ * Return:0
  */
 int main(void)
 {
