@@ -16,7 +16,7 @@ int main(void)
 			{
 				putchar(a);
 				putchar(b);
-				extern int putchar (int __c);
+				putchar(',');
 			}
 		}
 	}
