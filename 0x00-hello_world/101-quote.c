@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
- * main - Prints exactly "and that piece of art is useful - Dora Korpar, 2015-10-19"
+ * main - Entry point
  * AbooJa freestyle
  * Return: 0
  */
