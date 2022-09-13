@@ -14,11 +14,11 @@ int main(void)
 		{
 			if (a != b && b > a)
 			{
-			 	putchar(',');
-                                putchar(' ');
-				putchar(a);
-				putchar(b);
+				putchar(',');
+				putchar(' ');
 			}
+			putchar(a);
+			putchar(b);
 		}
 	}
 	putchar('\n');
