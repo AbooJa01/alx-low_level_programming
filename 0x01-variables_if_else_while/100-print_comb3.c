@@ -8,19 +8,23 @@ int main(void)
 {
 	int a, b;
 
-	for (a = 48; a <= 57; a++)
+	for (a = 0; a < 9; a++)
 	{
-		for (b = 49; b <= 57; b++)
+		for (b = a + 1; b <= 9; b++)
 		{
-			if (a != b && b > a)
+			if (b != a)
 			{
+				putchar(a);
+				putchar(b);
+
+				if (a == 8 && b == 9)
+					continue;
+
 				putchar(',');
 				putchar(' ');
 			}
-			putchar(a);
-			putchar(b);
 		}
-	}
 	putchar('\n');
+
 	return (0);
 }
