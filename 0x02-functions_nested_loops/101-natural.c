@@ -1,8 +1,7 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - sum of all the multiples of 3 or 5 below 1024 (excluded)
  * AbooJa01
  * Return: Null
 **/
@@ -13,14 +12,13 @@ int main(void)
 	int a = 0;
 	int sum = 0;
 
-	while (a < 1024)
+	for (a = 0; a < 1024, a++)
 	{
-		if (c % 3 == 0 || c % 5 == 0)
-		{
-			sum += c;
-		}
-		c++;
+		if ((a % 3) == 0 || (a % 5) == 0)
+			sum += a;
 	}
-	printf("%i\n", sum);
+
+	printf("%d\n", sum);
+
 	return (0);
 }
