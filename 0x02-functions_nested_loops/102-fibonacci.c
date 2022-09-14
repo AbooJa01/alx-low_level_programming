@@ -25,7 +25,7 @@ int main(void)
 		}
 		d = b + c;
 		b = c;
-		k = l;
+		c = d;
 	}
 
 	return (0);
