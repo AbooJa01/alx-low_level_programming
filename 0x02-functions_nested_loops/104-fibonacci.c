@@ -1,54 +1,40 @@
 #include <stdio.h>
 
 /**
-* main - Prints the first 98 Fibonacci numbers, starting with 1 and 2.
-* AbooJa01
-*
-* Return: Null
+* main - something
+* Return: something
 **/
-
 int main(void)
-
 {
-	int count;
-	unsigned long a = 0, b = 1, sum;
-/* a & b are First and Second Fibonacci numbers respectively*/
-	unsigned long a1, a2, b1, b2;
-	unsigned long ab1, ab2;
+	unsigned long int i, j, k, j1, j2, k1, k2;
 
-	for (count = 0; count < 92; count++)
+	j = 1;
+	k = 2;
+
+	printf("%lu", j);
+
+	for (i = 1; i < 91; i++)
 	{
-		sum = a + b;
-		printf("%lu, ", sum);
-
-		a = b;
-		b = sum;
+		printf(", %lu", k);
+		k = k + j;
+		j = k - j;
 	}
 
-	a1 = a / 10000000000;
-	a2 = a % 10000000000;
-	b1 = b / 10000000000;
-	b2 = b % 10000000000;
-
-	for (count = 93; count < 99; count++)
+	j1 = j / 1000000000;
+	j2 = j % 1000000000;
+	k1 = k / 1000000000;
+	k2 = k % 1000000000;
+	for (i = 92; i < 99; ++i)
 	{
-		ab1 = a1 + b1;
-		ab2 = a2 + b2;
-		if (ab2 > 9999999999)
-		{
-			ab1 += 1;
-			ab2 %= 10000000000;
-		}
-
-		printf("%lu%lu", half1, half2);
-		if (count != 98)
-			printf(", ");
-
-		a1 = b1;
-		a2 = b2;
-		b1 = ab1;
-		b2 = ab2;
+		printf(", %lu", k1 + (k2 / 1000000000));
+		printf("%lu", k2 % 1000000000);
+		k1 = k1 + j1;
+		j1 = k1 - j1;
+		k2 = k2 + j2;
+		j2 = k2 - j2;
 	}
+
 	printf("\n");
+
 	return (0);
 }
