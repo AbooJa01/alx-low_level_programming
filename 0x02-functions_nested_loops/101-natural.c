@@ -5,17 +5,14 @@
  * AbooJa01
  * Return: Null
 **/
-
 int main(void)
-
 {
-	int a = 0;
-	int sum = 0;
+	int i, sum = 0;
 
-	for (a = 0; a < 1024, a++)
+	for (i = 0; i < 1024; i++)
 	{
-		if ((a % 3) == 0 || (a % 5) == 0)
-			sum += a;
+		if ((i % 3) == 0 || (i % 5) == 0)
+			sum += i;
 	}
 
 	printf("%d\n", sum);
