@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_last_digit - prints the last digits of any number
+* print_last_digit - prints the last digits(k)of any number
 * @a: the int value to be acted upon
 * AbooJa01
 * Return: returns the last digit to calling function
@@ -9,12 +9,12 @@
 
 int print_last_digit(int a)
 {
-	if (a >= 0 && a <= 9)
-		return (a);
+	int k = a % 10;
 
-	else
-	{
-		a = _abs(a % 10);
-		return (a);
-	}
+	if (k < 0)
+		k *= -1;
+
+	_putchar(k + '0');
+
+	return (k);
 }
