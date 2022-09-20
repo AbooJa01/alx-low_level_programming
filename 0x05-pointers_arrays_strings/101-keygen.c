@@ -3,8 +3,9 @@
 #include <time.h>
 
 /**
-* main - generates random valid passwords
-* Return: 0 (on success).
+*  main - generates random valid passwords
+*  AbooJa01
+*  Return: Null
 */
 int main(void)
 {
