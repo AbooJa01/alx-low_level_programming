@@ -1,1 +1,1 @@
-This projects explains file manipulations on Input and Output
+This projects explains C file manipulations on Input and Output.
